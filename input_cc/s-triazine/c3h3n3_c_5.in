@@ -1,0 +1,31 @@
+$comment
+molecule: c3h3n3 
+basis: 6-311++G** 
+edge: c 
+$end
+
+$molecule
+0 1
+H       -0.000000    0.000000   -2.366583
+C       -0.000000   -0.000000   -1.289235
+N       -0.000000    1.184358   -0.683787
+C       -0.000000    1.116511    0.644615
+H       -0.000000    2.049521    1.183291
+N        0.000000    0.000000    1.367578
+C       -0.000000   -1.116511    0.644615
+H       -0.000000   -2.049521    1.183291
+N       -0.000000   -1.184358   -0.683787
+$end
+
+$rem
+method = eom-ccsd
+basis = 6-311++G** 
+print_general_basis = true 
+cvs_ee_states = [0,0,2,0,2,0] 
+n_frozen_core = fc 
+cc_trans_prop = true 
+cc_memory = 40000 
+eom_davidson_convergence = 4 
+eom_shift = 10000 
+$end
+

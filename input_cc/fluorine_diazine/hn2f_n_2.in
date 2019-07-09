@@ -1,0 +1,40 @@
+$comment
+molecule: hn2f 
+basis: aCT/T/D 
+edge: n 
+$end
+
+$molecule
+0 1
+N        1.010145   -0.339756    0.00000
+N        0.138737    0.506079    0.00000
+F       -1.101521   -0.152850    0.00000
+H        1.871520    0.211391    0.00000
+$end
+
+$rem
+method = eom-ccsd
+basis = gen 
+print_general_basis = true 
+cvs_ee_states = [2,2] 
+purecart = 1111 
+n_frozen_core = 3 
+cc_trans_prop = true 
+cc_memory = 40000 
+eom_davidson_convergence = 4 
+eom_shift = 14000 
+$end
+
+$basis
+****
+N     0 
+aug-cc-pCVTZ
+****
+F     0 
+cc-pVTZ
+****
+H     0 
+cc-pVDZ
+****
+$end
+

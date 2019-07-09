@@ -1,0 +1,39 @@
+$comment
+molecule: hno 
+basis: aCT/T/D 
+edge: o 
+$end
+
+$molecule
+0 1
+ N     0.000000     0.147695     0.628825
+ O     0.000000    -0.074056    -0.567478
+ H     0.000000    -0.775910     1.123303
+$end
+
+$rem
+method = eom-ccsd
+basis = gen 
+print_general_basis = true 
+cvs_ee_states = [2,2] 
+purecart = 1111 
+n_frozen_core = 1 
+cc_trans_prop = true 
+cc_memory = 40000 
+eom_davidson_convergence = 4 
+eom_shift = 19000 
+$end
+
+$basis
+****
+O     0 
+aug-cc-pCVTZ
+****
+N     0 
+aug-cc-pCVTZ
+****
+H     0 
+cc-pVDZ
+****
+$end
+

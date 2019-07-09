@@ -1,0 +1,63 @@
+$comment
+molecule: c3h4n2 
+basis: aCT/T/D 
+edge: n 
+$end
+
+$molecule
+0 1
+ C    -0.258755    -1.075115     0.000000
+ C    -0.373897     1.119080     0.000000
+ C     0.929706     0.693233     0.000000
+ N    -1.119573    -0.025708     0.000000 ! different
+ N     0.994934    -0.672206     0.000000
+ H    -2.120859    -0.080300     0.000000
+ H    -0.816615     2.092834     0.000000
+ H     1.813291     1.298683     0.000000
+ H    -0.593771    -2.092721     0.000000
+$end
+
+$rem
+method = eom-ccsd
+basis = mixed 
+print_general_basis = true 
+cvs_ee_states = [5,5] 
+purecart = 1111 
+n_frozen_core = 2 
+cc_trans_prop = true 
+cc_memory = 40000 
+eom_davidson_convergence = 4 
+eom_shift = 14000 
+$end
+
+$basis
+****
+C     1 
+aug-cc-pCVTZ
+****
+C     2 
+aug-cc-pCVTZ
+****
+C     3
+aug-cc-pCVTZ
+****
+N     4 
+cc-pVTZ
+****
+N     5
+aug-cc-pCVTZ
+****
+H     6 
+cc-pVDZ
+****
+H     7 
+cc-pVDZ
+****
+H     8 
+cc-pVDZ
+****
+H     9 
+cc-pVDZ
+****
+$end
+

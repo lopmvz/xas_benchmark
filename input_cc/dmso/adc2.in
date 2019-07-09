@@ -1,0 +1,45 @@
+$molecule
+0 1
+S       -0.000001    0.232169   -0.446822
+C       -1.330149   -0.799770    0.184043
+C        1.330149   -0.799770    0.184040
+H       -2.257664   -0.292990   -0.051734
+H       -1.214715   -0.877868    1.259777
+H       -1.305844   -1.774520   -0.291125
+H        2.257665   -0.292987   -0.051737
+H        1.305846   -1.774519   -0.291130
+H        1.214716   -0.877870    1.259774
+O        0.000000    1.471662    0.388354
+$end
+
+$rem
+method				cvs-adc(2)-x
+ee_singlets			10
+max_scf_cycles			200
+basis				gen
+purecart			1111
+cc_symmetry			false
+symmetry			false
+threads				30
+mem_total			90000
+mem_static			2000
+adc_davidson_maxsubspace	200
+adc_davidson_maxiter		500
+cc_rest_occ			2
+$end
+
+$basis
+****
+O     0 
+aug-cc-pVTZ
+****
+S     0 
+aug-cc-pVTZ
+****
+H     0
+cc-pVDZ
+****
+C     0
+cc-pVTZ
+****
+$end

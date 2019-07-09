@@ -1,0 +1,26 @@
+$comment
+molecule: cof2 
+basis: 6-311++G** 
+edge: c 
+$end
+
+$molecule
+0 1
+C        0.000000    0.000000    0.141734
+F        0.000000    1.058749   -0.632048
+F       -0.000000   -1.058749   -0.632048
+O        0.000000    0.000000    1.315807
+$end
+
+$rem
+method = eom-ccsd
+basis = 6-311++G** 
+print_general_basis = true 
+cvs_ee_states = [0,0,2,2] 
+n_frozen_core = fc 
+cc_trans_prop = true 
+cc_memory = 40000 
+eom_davidson_convergence = 4 
+eom_shift = 10000 
+$end
+

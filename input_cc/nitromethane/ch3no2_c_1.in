@@ -1,0 +1,46 @@
+$comment
+molecule: ch3no2 
+basis: aCQ/Q/Q 
+edge: c 
+$end
+
+$molecule
+0 1
+C       -1.308546   -0.044207   -0.000142
+N        0.168262    0.001157    0.000016
+H       -1.647162    0.479278   -0.883100
+H       -1.647337    0.478907    0.882970
+H       -1.617388   -1.077246   -0.000387
+O        0.679026    1.112132    0.000252
+O        0.769141   -1.065107   -0.000095
+$end
+
+$rem
+method = eom-ccsd
+basis = gen 
+print_general_basis = true 
+cvs_ee_states = [2] 
+purecart = 1111 
+n_frozen_core = fc 
+cc_trans_prop = true 
+cc_memory = 40000 
+eom_davidson_convergence = 4 
+eom_shift = 10000 
+$end
+
+$basis
+****
+O     0 
+aug-cc-pCVQZ
+****
+N     0 
+aug-cc-pCVQZ
+****
+H     0
+cc-pVQZ
+****
+C     0
+cc-pVQZ
+****
+$end
+

@@ -1,0 +1,47 @@
+$comment
+molecule: c3h3no 
+basis: aT/T/D 
+edge: o 
+$end
+
+$molecule
+0 1
+O       -1.098234    0.309725    0.000000
+C       -0.000000    1.095221    0.000000
+H       -0.164627    2.152475    0.000000
+N        1.125722    0.455572    0.000000
+C        0.751792   -0.873141    0.000000
+H        1.468861   -1.667200    0.000000
+C       -0.600121   -0.954966    0.000000
+H       -1.308439   -1.754762    0.000000
+$end
+
+$rem
+method = eom-ccsd
+basis = gen 
+print_general_basis = true 
+cvs_ee_states = [3,3] 
+purecart = 1111 
+n_frozen_core = 1 
+cc_trans_prop = true 
+cc_memory = 40000 
+eom_davidson_convergence = 4 
+eom_shift = 19000 
+$end
+
+$basis
+****
+O     0 
+aug-cc-pVTZ
+****
+N     0 
+aug-cc-pVTZ
+****
+C     0 
+aug-cc-pVTZ
+****
+H     0 
+cc-pVDZ
+****
+$end
+

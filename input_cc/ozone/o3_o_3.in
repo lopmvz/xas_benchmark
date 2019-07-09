@@ -1,0 +1,33 @@
+$comment
+molecule: o3 
+basis: aT/T/D 
+edge: o 
+$end
+
+$molecule
+0 1
+O        0.000000    0.000000    0.447337
+O       -0.000000    1.089161   -0.223668
+O       -0.000000   -1.089161   -0.223668
+$end
+
+$rem
+method = eom-ccsd
+basis = gen 
+print_general_basis = true 
+cvs_ee_states = [2,0,2,2] 
+purecart = 1111 
+n_frozen_core = 3 
+cc_trans_prop = true 
+cc_memory = 40000 
+eom_davidson_convergence = 4 
+eom_shift = 19000 
+$end
+
+$basis
+****
+O     0 
+aug-cc-pVTZ
+****
+$end
+

@@ -1,0 +1,40 @@
+$comment
+molecule: ch2o 
+basis: aCT/T/D 
+edge: c 
+$end
+
+$molecule
+0 1
+ C     0.000000    0.000000   -0.531273
+ O     0.000000    0.000000    0.676162
+ H     0.000000    0.930533   -1.110830
+ H     0.000000   -0.930533   -1.110830
+$end
+
+$rem
+method = eom-ccsd
+basis = gen 
+print_general_basis = true 
+cvs_ee_states = [2,0,2,2] 
+purecart = 1111 
+n_frozen_core = fc 
+cc_trans_prop = true 
+cc_memory = 40000 
+eom_davidson_convergence = 4 
+eom_shift = 10000 
+$end
+
+$basis
+****
+O     0 
+aug-cc-pCVTZ
+****
+H     0
+cc-pVDZ
+****
+C     0
+aug-cc-pCVTZ
+****
+$end
+

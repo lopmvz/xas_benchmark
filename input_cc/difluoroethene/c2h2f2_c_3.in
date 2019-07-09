@@ -1,0 +1,42 @@
+$comment
+molecule: c2h2f2 
+basis: aT/T/D 
+edge: c 
+$end
+
+$molecule
+0 1
+ C     0.000000    -1.442144     0.000000
+ C     0.000000    -0.125840     0.000000
+ F    -1.075597     0.629115     0.000000
+ H     0.933612    -1.965044     0.000000
+ H    -0.933612    -1.965044     0.000000
+ F     1.075597     0.629115     0.000000
+$end
+
+$rem
+method = eom-ccsd
+basis = gen 
+print_general_basis = true 
+cvs_ee_states = [0,0,0,5] 
+purecart = 1111 
+n_frozen_core = fc 
+cc_trans_prop = true 
+cc_memory = 40000 
+eom_davidson_convergence = 4 
+eom_shift = 10000 
+$end
+
+$basis
+****
+C     0 
+aug-cc-pVTZ
+****
+H     0 
+cc-pVDZ
+****
+F     0 
+cc-pVTZ
+****
+$end
+
