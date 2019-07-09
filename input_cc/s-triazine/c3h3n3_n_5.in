@@ -21,7 +21,7 @@ $rem
 method = eom-ccsd
 basis = 6-311++G** 
 print_general_basis = true 
-cvs_ee_states = [0,0,2,0,2,0] 
+cvs_ee_states = [3,3,0,3] 
 n_frozen_core = 3 
 cc_trans_prop = true 
 cc_memory = 40000 

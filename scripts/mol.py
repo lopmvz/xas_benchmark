@@ -9,7 +9,7 @@ def read_file( fd ):
     os.system("cp ../basis4 .")
     lineit = iter(fd)
     mol=""
-    states = "[5,5,5,5]"
+    states = "[3,3,0,3]"
     nh = 0
     hydrogen = False
     nc = 0
